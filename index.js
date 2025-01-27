@@ -35,6 +35,11 @@ app.get("/",async (req,res)=>{
 
 app.use("/user",userRoute);
 app.use("/blog",blogRoute)
+const User = require("./models/user");
+
+
+
+
 
 app.listen(PORT,()=>{
   console.log(`Server is running on PORT ${PORT}`);
