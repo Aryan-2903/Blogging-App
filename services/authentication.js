@@ -5,6 +5,8 @@ const secret = "3278&*EQHk";
 function createTokenForUser(user){
   const payload ={
     _id:user._id,
+    firstName: user.firstName,
+    lastName: user.lastName,
     email:user.email,
     profileImageURL:user.profileImageURL,
     role:user.role,
