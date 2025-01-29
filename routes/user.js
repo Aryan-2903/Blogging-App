@@ -22,7 +22,7 @@ router.get("/signin",(req,res)=>{
   return res.redirect("/");
 
  })
-
+//this route will match the email and passsword given by the user and will return error if pass or email is wrong
  router.post("/signin", async(req,res)=>{
   const {email, password} = req.body;
   try {
